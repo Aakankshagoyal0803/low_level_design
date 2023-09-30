@@ -1,6 +1,7 @@
 # low_level_design
 low level design learning and practise
 
+CREATIONAL DESIGN PATTERN 
 
 Simple Fcatory - 
             encapsulate object creation process.
@@ -8,16 +9,16 @@ Simple Fcatory -
             parent is same for object.
             we create a class factory to create objects
             if else is there in factory class
-            example -> logger, product (books, clothes, electronics), Order(take away, dine in, online), parking lot(normal, preganant lady, elder, handicap).
-            issue -> factory class is not following open close principle
+            example - logger, product (books, clothes, electronics), Order(take away, dine in, online), parking lot(normal, preganant lady, elder, handicap).
+            issue - factory class is not following open close principle
 
 
 Factory method - 
             Factort will not be class, it will be interface.
-            Interface -> ILoggerFactory, method inside this createLogger()
+            Interface - ILoggerFactory, method inside this createLogger()
             DebugLoggerFactory, InfoLoggerFactory will implement ILoggerFactory.
             two intefaces here -> ILogger and ILoggerFactory
-            ILogger -> will have log method
+            ILogger - will have log method
             ILoggerFactory -> will have createLogger method.
 
 
@@ -35,18 +36,16 @@ Builder Design Pattern ->
             - if we use factory in the example of desktop
             - then there might be case where we forget to add printer and monitor and so on. becuase we are not forcing concrete class to implement such things.
 
-            -- we can use this when we have template that any concrete class should have this. (implement this)
-            - disadvantage -> so much code. 
-            - 
+            - we can use this when we have template that any concrete class should have this. (implement this)
+            - disadvantage -> so much code.
 
 Prototype design pattern
             - when we want to delegate the process of cloning
             - inside product we can have this method.
 
 
-
 Singleton Design Pattern 
-            - example - theme (light, dark) --> this should be valid in all classes.
+            - example - theme (light, dark) -> this should be valid in all classes.
             - configuration class. (only one config object), payment gateway.
             - logger, logger1 -> file1 , logger2 -> file2 (not good) 
             - logger should just one object and write to just one file. 
